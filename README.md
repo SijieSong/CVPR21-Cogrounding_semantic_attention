@@ -20,7 +20,7 @@ python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset V
 
 * Test CG-SL-Att. on VID (model acc: 59.48):
 
-Please download trained model from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<>)
+Please download trained models from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<>To be uploaded), then put the models under ./saved_models .
 
 ```
 python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --test --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
@@ -32,6 +32,8 @@ python train_semantic_attention_visual_grounding.py --data_root  ./data  --datas
 ```
 
 * Test SL-Att. on RefCOCO (model acc: val/testA/testB 77.65/80.75/73.37):
+
+Please download trained models and the put the models under ./saved_models as above.
 ```
 python train_semantic_attention_visual_grounding.py --data_root  ./data  --dataset unc --gpu GPUID --savename Refcoco_grounding_semantic_attn --batch_size BATCHSIZE --lstm --test --resume ./saved_models/RefCOCO_semantic_attn.pth.tar
 ```
