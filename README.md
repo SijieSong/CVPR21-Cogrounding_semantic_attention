@@ -10,19 +10,27 @@ Check out our [paper](<https://arxiv.org/abs/2103.12346>) here.
 ### Prerequisites
 * Python 3
 * Pytorch >= 0.4.1
-* Others ([Pytorch-Bert](<https://pypi.org/project/pytorch-pretrained-bert/>),OpenCV, scipy, etc.)
+* Others (OpenCV, scipy, etc.)
 
 ### Getting started
+* Train VID
+```
+python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename SAVENAME_FOR_YOUR_MODEL  --batch_size BATCHSIZE --lstm
+```
 
-* Testing VID (model acc: 59.22):
+* Test VID (model acc: 59.22):
 ```
 python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --test --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
-
 ```
-* Testing RefCOCO (mode acc: val/testA/testB 77.65/80.75/73.37):
+
+* Train VID
+```
+python train_semantic_attention_visual_grounding.py --data_root  ./data  --dataset unc --gpu GPUID --savename SAVENAME_FOR_YOUR_MODEL --batch_size BATCHSIZE --lstm
+```
+
+* Test RefCOCO (mode acc: val/testA/testB 77.65/80.75/73.37):
 ```
 python train_semantic_attention_visual_grounding.py --data_root  ./data  --dataset unc --gpu GPUID --savename Refcoco_grounding_semantic_attn --batch_size BATCHSIZE --lstm --test --resume ./saved_models/RefCOCO_semantic_attn.pth.tar
-
 ```
 
 ### Todo
