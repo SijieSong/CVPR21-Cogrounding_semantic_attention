@@ -1,6 +1,6 @@
 # CVPR21-Cogrounding_semantic_attention
 
-### Co-Grounding Networks with Semantic Attention for Referring ExpressionComprehension in Videos <br>(CVPR 2021).
+### Co-Grounding Networks with Semantic Attention for Referring ExpressionComprehension in Videos (CVPR 2021).
 
 Project page: https://sijiesong.github.io/co-grounding/
 
