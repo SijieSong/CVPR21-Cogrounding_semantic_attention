@@ -19,7 +19,8 @@ python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset V
 ```
 
 * Test CG-SL-Att. on VID (model acc: 59.48):
-Please download trained model from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>(Extraction code：p98p) or [GoogleDrive](<>)
+
+Please download trained model from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<>)
 
 ```
 python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --test --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
