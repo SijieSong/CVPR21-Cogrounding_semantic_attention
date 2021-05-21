@@ -7,6 +7,12 @@ Project page: https://sijiesong.github.io/co-grounding/
 Check out our [paper](<https://arxiv.org/abs/2103.12346>) here.
 
 
+### Prerequisites
+* Python 3
+* Pytorch >= 0.4.1
+* Others (Pytorch-Bert(<https://pypi.org/project/pytorch-pretrained-bert/>),OpenCV, scipy, etc.)
+
+
 ### Todo
 - [ ] Upload training models
 - [ ] Upload data file
