@@ -13,22 +13,24 @@ Check out our [paper](<https://arxiv.org/abs/2103.12346>) here.
 * Others (OpenCV, scipy, etc.)
 
 ### Getting started
-* Train VID
+* Train CG-SL-Att. on VID 
 ```
 python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename SAVENAME_FOR_YOUR_MODEL  --batch_size BATCHSIZE --lstm
 ```
 
-* Test VID (model acc: 59.22):
+* Test CG-SL-Att. on VID (model acc: 59.48):
+Please download trained model from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>(Extraction code：p98p) or [GoogleDrive](<>)
+
 ```
 python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --test --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
 ```
 
-* Train VID
+* Train SL-Att. on RefCOCO
 ```
 python train_semantic_attention_visual_grounding.py --data_root  ./data  --dataset unc --gpu GPUID --savename SAVENAME_FOR_YOUR_MODEL --batch_size BATCHSIZE --lstm
 ```
 
-* Test RefCOCO (mode acc: val/testA/testB 77.65/80.75/73.37):
+* Test SL-Att. on RefCOCO (model acc: val/testA/testB 77.65/80.75/73.37):
 ```
 python train_semantic_attention_visual_grounding.py --data_root  ./data  --dataset unc --gpu GPUID --savename Refcoco_grounding_semantic_attn --batch_size BATCHSIZE --lstm --test --resume ./saved_models/RefCOCO_semantic_attn.pth.tar
 ```
@@ -49,7 +51,7 @@ If you use this code for your research, please cite our paper:
 
 ```
 @inproceedings{cogrounding_2021_CVPR,
-author = {Song, Sijie and Lin Xudong and Liu, Jiaying and Guo, Zongming and Chang, Shih-Fu},
+author = {Song, Sijie and Lin, Xudong and Liu, Jiaying and Guo, Zongming and Chang, Shih-Fu},
 title = {Co-Grounding Networks with Semantic Attention for Referring Expression Comprehension in Videos},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
 month = {June},
