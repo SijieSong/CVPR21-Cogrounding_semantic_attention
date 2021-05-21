@@ -5,3 +5,8 @@
 Project page: https://sijiesong.github.io/co-grounding/
 
 Check out our [paper](<https://arxiv.org/abs/2103.12346>) here.
+
+
+### Todo
+- [] Upload training models
+- [] Upload data file
