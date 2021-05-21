@@ -10,7 +10,7 @@ Check out our [paper](<https://arxiv.org/abs/2103.12346>) here.
 ### Prerequisites
 * Python 3
 * Pytorch >= 0.4.1
-* Others (Pytorch-Bert(<https://pypi.org/project/pytorch-pretrained-bert/>),OpenCV, scipy, etc.)
+* Others ([Pytorch-Bert](<https://pypi.org/project/pytorch-pretrained-bert/>),OpenCV, scipy, etc.)
 
 
 ### Todo
