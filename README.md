@@ -14,8 +14,8 @@ Check out our [paper](<https://arxiv.org/abs/2103.12346>) here.
 
 ### Data Preparation
 * Please download the files from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<https://drive.google.com/drive/folders/1VM_ScHIBKXb7pkgBizRJYtZL7UsC4NR1?usp=sharing>)[./data], then put the files under ./data.
-* Download VID Dataset from this [link](<https://bvisionweb1.cs.unc.edu/ilsvrc2015/>) and put it into ./data/VID
-* Download RefCOCO Dataset following this [link] (<https://github.com/lichengunc/refer>) and put it into ./data/unc
+* Download VID Dataset from this [link](<https://bvisionweb1.cs.unc.edu/ilsvrc2015/>) and put it into ./data/VID.
+* Download RefCOCO Dataset following this [link](<https://github.com/lichengunc/refer>) and put it into ./data/unc.
 
 
 ### Getting started
