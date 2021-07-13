@@ -12,6 +12,12 @@ Check out our [paper](<https://arxiv.org/abs/2103.12346>) here.
 * Pytorch >= 0.4.1
 * Others (OpenCV, scipy, etc.)
 
+### Data Preparation
+* Please download the files from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<https://drive.google.com/drive/folders/1VM_ScHIBKXb7pkgBizRJYtZL7UsC4NR1?usp=sharing>)[./data], then put the files under ./data.
+* Download VID Dataset from this [link](<https://bvisionweb1.cs.unc.edu/ilsvrc2015/>) and put it into ./data/VID
+* Download RefCOCO Dataset following this [link] (<https://github.com/lichengunc/refer>) and put it into ./data/unc
+
+
 ### Getting started
 * Train CG-SL-Att. on VID 
 ```
@@ -20,7 +26,7 @@ python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset V
 
 * Test CG-SL-Att. on VID (model acc: 59.48):
 
-Please download trained models from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<https://drive.google.com/drive/folders/1VM_ScHIBKXb7pkgBizRJYtZL7UsC4NR1?usp=sharing>)(To be uploaded), then put the models under ./saved_models .
+Please download trained models from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<https://drive.google.com/drive/folders/1VM_ScHIBKXb7pkgBizRJYtZL7UsC4NR1?usp=sharing>)[./saved_models], then put the models under ./saved_models.
 
 ```
 python test_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --test --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
@@ -47,9 +53,6 @@ Please download trained models and the put the models under ./saved_models as ab
 ```
 python train_semantic_attention_visual_grounding.py --data_root  ./data  --dataset unc --gpu GPUID --savename Refcoco_grounding_semantic_attn --batch_size BATCHSIZE --lstm --test --resume ./saved_models/RefCOCO_semantic_attn.pth.tar
 ```
-
-### Todo
-- [ ] Upload data file
 
 
 
