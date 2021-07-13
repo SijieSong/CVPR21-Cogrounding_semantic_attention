@@ -23,7 +23,17 @@ python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset V
 Please download trained models from [BaiduYun](<https://pan.baidu.com/s/1IMy9aISnsxw_wY8siEyEYg>)(Extraction code：p98p) or [GoogleDrive](<>)(To be uploaded), then put the models under ./saved_models .
 
 ```
-python train_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --test --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
+python test_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --test --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
+```
+
+* Post processing based on CG-SL-Att. on VID (model acc: 60.03):
+1. Generate cache files
+```
+python test_semantic_attention_cogrounding.py  --data_root  ./data  --dataset VID --gpu GPUID --savename VID_cogrounding_semantic_attn  --batch_size BATCHSIZE --lstm --cache --resume ./saved_models/VID_cogrounding_semantic_attn.pth.tar
+```
+2. Post-process the initial results
+```
+python post_processing.py --data_root ./data/ --dataset VID --gpu 0 --savename model_post_processing --batch_size 16 --lstm --test --cache_dir CACHE_FILE_PATH
 ```
 
 * Train SL-Att. on RefCOCO
@@ -39,9 +49,8 @@ python train_semantic_attention_visual_grounding.py --data_root  ./data  --datas
 ```
 
 ### Todo
-- [ ] Upload training models
 - [ ] Upload data file
-- [ ] Upload post-processing scripts
+
 
 
 ### Related projects
